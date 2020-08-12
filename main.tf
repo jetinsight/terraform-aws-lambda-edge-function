@@ -134,6 +134,6 @@ resource "aws_lambda_function" "main" {
   publish          = true
   tags             = var.tags
   environment {
-    variables = var.environment_variables
+    variables = var.lambda_environment_variables
   }
 }
