@@ -25,6 +25,12 @@ variable "function_description" {
   default     = ""
 }
 
+variable "lambda_environment_variables" {
+  type        = map(string)
+  description = "A map that defines environment variables for the Lambda function."
+  default     = {}
+}
+
 variable "function_name" {
   type        = string
   description = "A unique name for your Lambda Function."

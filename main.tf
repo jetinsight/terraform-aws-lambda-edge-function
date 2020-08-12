@@ -133,4 +133,7 @@ resource "aws_lambda_function" "main" {
   memory_size      = var.memory_size
   publish          = true
   tags             = var.tags
+  environment {
+    variables = var.environment_variables
+  }
 }
